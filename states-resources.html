@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>State Unclaimed Property Search | Official Links - MyFundsFinder</title>
+    <meta name="title" content="State Unclaimed Property Search | Official Links - MyFundsFinder">
+    <meta name="description" content="Access official state unclaimed property websites. Search for missing money in all 50 states and provinces. Direct government links, no fees, trusted sources only.">
+    <meta name="keywords" content="state unclaimed property, state treasury search, missing money by state, unclaimed funds directory, state unclaimed money search, official state websites">
+    
+    <!-- Canonical URL -->
+    <meta rel="canonical" href="https://myfundsfinder.com/states-resources">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://myfundsfinder.com/states-resources">
+    <meta property="og:title" content="Search Unclaimed Property by State - Official Government Links">
+    <meta property="og:description" content="Find your state's official unclaimed property website. Direct access to all state treasury and unclaimed funds databases. Free government resources, no fees.">
+    <meta property="og:image" content="https://myfundsfinder.com/images/states-resources-share.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://myfundsfinder.com/states-resources">
+    <meta property="twitter:title" content="Search Unclaimed Property by State - Official Government Links">
+    <meta property="twitter:description" content="Find your state's official unclaimed property website. Direct access to all state treasury and unclaimed funds databases. Free government resources, no fees.">
+    <meta property="twitter:image" content="https://myfundsfinder.com/images/states-resources-share.png">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#16a34a">
+
+    <!-- Additional SEO -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="MyFundsFinder">
+    <meta name="language" content="English">
+
+    <!-- Existing Resources -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "State Unclaimed Property Directory",
+        "description": "Directory of official state unclaimed property websites and databases",
+        "publisher": {
+            "@type": "Organization",
+            "name": "MyFundsFinder"
+        },
+        "mainEntity": {
+            "@type": "ItemList",
+            "numberOfItems": 51,
+            "itemListElement": [
+                {
+                    "@type": "Thing",
+                    "name": "Alabama Unclaimed Property",
+                    "url": "https://alabama.findyourunclaimedproperty.com/"
+                },
+                {
+                    "@type": "Thing",
+                    "name": "Alaska Unclaimed Property",
+                    "url": "https://unclaimedproperty.alaska.gov/"
+                }
+                // Note: Full list truncated for brevity
+            ]
+        }
+    }
+    </script>
+
+    <!-- Breadcrumb Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://myfundsfinder.com"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "State Resources",
+            "item": "https://myfundsfinder.com/states-resources"
+        }]
+    }
+    </script>
+
+    <style>
+        [data-state] {
+            transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Include Header -->
+    <div id="header-placeholder"></div>
+    <script src="header.js"></script>
+
+    <!-- Search Bar -->
+    <section class="py-8 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <!-- Top Banner Ad -->
+            <div class="max-w-4xl mx-auto mb-8 p-4 bg-gray-200 text-center rounded-lg">
+                <p class="text-gray-500">Advertisement Placeholder (728x90 Banner)</p>
+            </div>
+
+            <div class="max-w-xl mx-auto">
+                <div class="relative">
+                    <input type="text" 
+                           id="stateSearch" 
+                           placeholder="Search for your state..." 
+                           class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent"
+                    >
+                    <div class="absolute inset-y-0 right-0 flex items-center pr-3">
+                        <i class="fas fa-search text-gray-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- State Resources Grid -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div id="stateResourcesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Cards will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Banner Ad -->
+    <section class="py-8 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto p-4 bg-gray-200 text-center rounded-lg">
+                <p class="text-gray-500">Advertisement Placeholder (728x90 Banner)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script src="footer.js"></script>
+
+    <script>
+        const stateResources = [
+            {
+                name: 'Alabama',
+                url: 'https://alabama.findyourunclaimedproperty.com/'
+            },
+            {
+                name: 'Alaska',
+                url: 'https://unclaimedproperty.alaska.gov/'
+            },
+            {
+                name: 'Alberta',
+                url: 'https://www.alberta.ca/unclaimed-property.aspx'
+            },
+            {
+                name: 'Arizona',
+                url: 'https://azdor.gov/unclaimed-property'
+            },
+            {
+                name: 'Arkansas',
+                url: 'https://claimitar.gov/'
+            },
+            {
+                name: 'California',
+                url: 'https://www.sco.ca.gov/upd_msg.html'
+            },
+            {
+                name: 'Colorado',
+                url: 'https://colorado.findyourunclaimedproperty.com/'
+            },
+            {
+                name: 'Connecticut',
+                url: 'https://ctbiglist.gov/'
+            },
+            {
+                name: 'Delaware',
+                url: 'http://unclaimedproperty.delaware.gov/'
+            },
+            {
+                name: 'District of Columbia',
+                url: 'https://unclaimedproperty.dc.gov/'
+            },
+            {
+                name: 'Florida',
+                url: 'https://www.fltreasurehunt.gov/'
+            },
+            {
+                name: 'Georgia',
+                url: 'http://dor.georgia.gov/unclaimed-property-program'
+            },
+            {
+                name: 'Hawaii',
+                url: 'http://www.ehawaii.gov/lilo/app'
+            },
+            {
+                name: 'Idaho',
+                url: 'https://yourmoney.idaho.gov/'
+            },
+            {
+                name: 'Illinois',
+                url: 'https://icash.illinoistreasurer.gov/'
+            },
+            {
+                name: 'Indiana',
+                url: 'https://indianaunclaimed.gov/'
+            },
+            {
+                name: 'Iowa',
+                url: 'https://greatiowatreasurehunt.gov/'
+            },
+            {
+                name: 'Kansas',
+                url: 'https://www.kansascash.ks.gov/'
+            },
+            {
+                name: 'Kentucky',
+                url: 'https://treasury.ky.gov/unclaimedproperty/'
+            },
+            {
+                name: 'Louisiana',
+                url: 'https://louisiana.findyourunclaimedproperty.com/'
+            },
+            {
+                name: 'Maine',
+                url: 'https://www.maine.gov/treasurer/unclaimed_property/'
+            },
+            {
+                name: 'Maryland',
+                url: 'https://marylandtaxes.gov/unclaimed-property/'
+            },
+            {
+                name: 'Massachusetts',
+                url: 'https://findmassmoney.com/'
+            },
+            {
+                name: 'Michigan',
+                url: 'https://unclaimedproperty.michigan.gov/'
+            },
+            {
+                name: 'Minnesota',
+                url: 'https://mn.gov/commerce/consumers/your-money/find-missing-money/'
+            },
+            {
+                name: 'Mississippi',
+                url: 'https://treasury.ms.gov/unclaimed-property/'
+            },
+            {
+                name: 'Missouri',
+                url: 'https://treasurer.mo.gov/unclaimed-property/'
+            },
+            {
+                name: 'Montana',
+                url: 'https://tap.dor.mt.gov/_/'
+            },
+            {
+                name: 'Nebraska',
+                url: 'https://treasurer.nebraska.gov/up/'
+            },
+            {
+                name: 'Nevada',
+                url: 'https://nevadaunclaimed.gov/'
+            },
+            {
+                name: 'New Hampshire',
+                url: 'https://www.nh.gov/treasury/unclaimed-property/'
+            },
+            {
+                name: 'New Jersey',
+                url: 'https://www.unclaimedproperty.nj.gov/'
+            },
+            {
+                name: 'New Mexico',
+                url: 'https://www.missingmoney.com/en/property/nm'
+            },
+            {
+                name: 'New York',
+                url: 'https://www.osc.state.ny.us/unclaimed-funds'
+            },
+            {
+                name: 'North Carolina',
+                url: 'https://www.nccash.com/'
+            },
+            {
+                name: 'North Dakota',
+                url: 'https://unclaimedproperty.nd.gov/'
+            },
+            {
+                name: 'Ohio',
+                url: 'https://www.ohiounclaimedproperty.gov/'
+            },
+            {
+                name: 'Oklahoma',
+                url: 'https://oktreasure.com/'
+            },
+            {
+                name: 'Oregon',
+                url: 'https://unclaimed.oregon.gov/'
+            },
+            {
+                name: 'Pennsylvania',
+                url: 'https://www.patreasury.gov/unclaimed-property/'
+            },
+            {
+                name: 'Puerto Rico',
+                url: 'https://www.ocif.pr.gov/consumidores'
+            },
+            {
+                name: 'Rhode Island',
+                url: 'https://www.findrimoney.gov/'
+            },
+            {
+                name: 'South Carolina',
+                url: 'https://southcarolina.findyourunclaimedproperty.com/'
+            },
+            {
+                name: 'South Dakota',
+                url: 'https://southdakota.findyourunclaimedproperty.com/'
+            },
+            {
+                name: 'Tennessee',
+                url: 'https://treasury.tn.gov/Unclaimed-Property/'
+            },
+            {
+                name: 'Texas',
+                url: 'https://claimittexas.org/'
+            },
+            {
+                name: 'Utah',
+                url: 'https://mycash.utah.gov/'
+            },
+            {
+                name: 'Vermont',
+                url: 'https://www.vermonttreasurer.gov/unclaimed-property'
+            },
+            {
+                name: 'Virginia',
+                url: 'https://vamoneysearch.gov'
+            },
+            {
+                name: 'Washington',
+                url: 'http://ucp.dor.wa.gov/'
+            },
+            {
+                name: 'West Virginia',
+                url: 'https://www.wvunclaimedproperty.gov/'
+            },
+            {
+                name: 'Wisconsin',
+                url: 'https://www.revenue.wi.gov/Pages/UnclaimedProperty/Home.aspx'
+            },
+            {
+                name: 'Wyoming',
+                url: 'https://statetreasurer.wyo.gov/unclaimed-property/'
+            }
+        ];
+
+        function createStateCard(state) {
+            return `
+                <div class="bg-white rounded shadow" data-state="${state.name.toLowerCase()}">
+                    <div class="bg-green-600 p-3 text-white text-center">
+                        <h5 class="text-lg font-semibold">${state.name}</h5>
+                    </div>
+                    <div class="p-4">
+                        <a href="${state.url}" 
+                           target="_blank" 
+                           class="block w-full text-center bg-gray-100 hover:bg-gray-200 text-green-600 font-semibold py-2 px-4 rounded transition-colors">
+                            Search ${state.name} Unclaimed Funds
+                        </a>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderStateCards() {
+            const grid = document.getElementById('stateResourcesGrid');
+            const sortedStates = stateResources.sort((a, b) => a.name.localeCompare(b.name));
+            
+            const statesHtml = sortedStates
+                .map(state => createStateCard(state))
+                .join('');
+            
+            grid.innerHTML = statesHtml;
+        }
+
+        function filterStates(searchTerm) {
+            const cards = document.querySelectorAll('[data-state]');
+            const normalizedSearch = searchTerm.toLowerCase().trim();
+            
+            // If search is empty, show all cards
+            if (normalizedSearch === '') {
+                cards.forEach(card => {
+                    card.style.display = '';
+                    card.style.opacity = '1';
+                    card.style.transform = 'scale(1)';
+                });
+                return;
+            }
+            
+            // Otherwise, apply the filter
+            cards.forEach(card => {
+                const stateName = card.dataset.state;
+                if (stateName.includes(normalizedSearch)) {
+                    card.style.display = '';
+                    card.style.opacity = '1';
+                    card.style.transform = 'scale(1)';
+                } else {
+                    card.style.opacity = '0';
+                    card.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        card.style.display = 'none';
+                    }, 200);
+                }
+            });
+        }
+
+        // Initialize the grid and search functionality when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            renderStateCards();
+            
+            // Add search functionality
+            const searchInput = document.getElementById('stateSearch');
+            searchInput.addEventListener('input', (e) => {
+                filterStates(e.target.value);
+            });
+        });
+    </script>
+</body>
+</html>
