@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
-                    <h4 class="text-xl font-bold mb-4">MyFundsFinder</h4>
+                    <h4 class="text-xl font-bold mb-4">UnclaimedFundsFindr</h4>
                     <p>Connecting you with your unclaimed funds.</p>
                 </div>
                 <div>
@@ -25,14 +25,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div>
                     <h4 class="text-xl font-bold mb-4">Contact</h4>
                     <ul class="space-y-2">
-                        <li>support@myfundsfinder.com</li>
+                        <li>spr3adsh33t.bot@gmail.com.</li>
                         <li><a href="privacy-policy.html" class="hover:text-green-400">Privacy Policy</a></li>
                         <li><a href="terms-of-service.html" class="hover:text-green-400">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
             <div class="border-t border-gray-700 mt-8 pt-8 text-center">
-                <p>&copy; ${new Date().getFullYear()} MyFundsFinder. All rights reserved.</p>
+                <p>&copy; ${new Date().getFullYear()} UnclaimedFundsFindr. All rights reserved.</p>
             </div>
         </div>
     </footer>
