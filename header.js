@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="container mx-auto px-6 py-4">
                 <div class="flex justify-between items-center">
                     <a href="index.html" class="flex items-center">
-                        <img src="/images/icon.webp" alt="UnclaimedFundsFindr Logo" class="rounded h-8 w-8">
+                        <img src="/images/icon-nobg.png" alt="UnclaimedFundsFindr Logo" class="rounded h-8 w-8">
                         <span class="hidden md:block text-2xl font-bold text-green-600 ml-2">UnclaimedFundsFindr</span>
                     </a>
                     <div class="space-x-6">
