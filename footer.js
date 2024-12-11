@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div>
                     <h4 class="text-xl font-bold mb-4">Quick Links</h4>
                     <ul class="space-y-2">
-                        <li><a href="about-us.html" class="hover:text-green-400">About Us</a></li>
-                        <li><a href="reminder-signup.html" class="hover:text-green-400">Set Up Alerts</a></li>
+                        <li><a href="/about-us" class="hover:text-green-400">About Us</a></li>
+                        <li><a href="/reminder-signup" class="hover:text-green-400">Set Up Alerts</a></li>
                     </ul>
                 </div>
                 <div>
@@ -19,15 +19,15 @@ document.addEventListener('DOMContentLoaded', function() {
                     <ul class="space-y-2">
                         <li><a href="https://missingmoney.com" class="hover:text-green-400">MissingMoney.com</a></li>
                         <li><a href="/states-resources" class="hover:text-green-400">State Websites</a></li>
-                        <li><a href="about-us.html" class="hover:text-green-400">FAQ</a></li>
+                        <li><a href="/about-us" class="hover:text-green-400">FAQ</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-xl font-bold mb-4">Contact</h4>
                     <ul class="space-y-2">
                         <li>spr3adsh33t.bot@gmail.com.</li>
-                        <li><a href="privacy-policy.html" class="hover:text-green-400">Privacy Policy</a></li>
-                        <li><a href="terms-of-service.html" class="hover:text-green-400">Terms of Service</a></li>
+                        <li><a href="/privacy-policy" class="hover:text-green-400">Privacy Policy</a></li>
+                        <li><a href="/terms-of-service" class="hover:text-green-400">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
