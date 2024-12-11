@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <h4 class="text-xl font-bold mb-4">Resources</h4>
                     <ul class="space-y-2">
                         <li><a href="https://missingmoney.com" class="hover:text-green-400">MissingMoney.com</a></li>
-                        <li><a href="states-resources.html" class="hover:text-green-400">State Websites</a></li>
+                        <li><a href="/states-resources" class="hover:text-green-400">State Websites</a></li>
                         <li><a href="about-us.html" class="hover:text-green-400">FAQ</a></li>
                     </ul>
                 </div>
