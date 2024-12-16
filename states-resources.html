@@ -141,7 +141,7 @@
     <!-- State Resources Grid -->
     <section class="py-16">
         <div class="container mx-auto px-6">
-            <div id="stateResourcesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div id="stateResourcesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 <!-- Cards will be dynamically inserted here -->
             </div>
         </div>
@@ -276,7 +276,7 @@
             },
             {
                 name: 'Nebraska',
-                url: 'https://treasurer.nebraska.gov/up/'
+                url: 'https://nebraskalostcash.nebraska.gov/app/claim-search'
             },
             {
                 name: 'Nevada',
@@ -377,20 +377,111 @@
         ];
 
         function createStateCard(state) {
+            const stateAbbr = getStateAbbreviation(state.name);
+            
             return `
-                <div class="bg-white rounded shadow" data-state="${state.name.toLowerCase()}">
-                    <div class="bg-green-600 p-3 text-white text-center">
-                        <h5 class="text-lg font-semibold">${state.name}</h5>
+                <a href="${state.url}" 
+                   target="_blank"
+                   title="Search ${state.name} Unclaimed Property Database"
+                   aria-label="Search ${state.name} Unclaimed Property Database"
+                   class="block bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer" 
+                   data-state="${state.name.toLowerCase()}">
+                    <div class="bg-gradient-to-r from-green-600 to-green-500 p-4 rounded-t-lg text-white">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <h5 class="text-xl font-bold">${state.name}</h5>
+                            </div>
+                            <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                <span class="text-lg font-bold">${stateAbbr}</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-4">
-                        <a href="${state.url}" 
-                           target="_blank" 
-                           class="block w-full text-center bg-gray-100 hover:bg-gray-200 text-green-600 font-semibold py-2 px-4 rounded transition-colors">
-                            Search ${state.name} Unclaimed Funds
-                        </a>
+                    <div class="p-6">
+                        <div class="flex flex-col">
+                            <div class="flex items-center justify-center space-x-2 bg-green-50 hover:bg-green-100 text-green-700 font-semibold py-3 px-4 rounded-lg transition-colors duration-200 whitespace-nowrap overflow-hidden">
+                                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                                </svg>
+                                <span class="truncate">Search ${state.name} Unclaimed Funds</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </a>
             `;
+        }
+
+        // Add this helper function to get state abbreviations
+        function getStateAbbreviation(stateName) {
+            const stateAbbreviations = {
+                'Alabama': 'AL',
+                'Alaska': 'AK',
+                'Alberta': 'AB',
+                'Arizona': 'AZ',
+                'Arkansas': 'AR',
+                'British Columbia': 'BC',
+                'California': 'CA',
+                'Colorado': 'CO',
+                'Connecticut': 'CT',
+                'Delaware': 'DE',
+                'District of Columbia': 'DC',
+                'Florida': 'FL',
+                'Georgia': 'GA',
+                'Hawaii': 'HI',
+                'Idaho': 'ID',
+                'Illinois': 'IL',
+                'Indiana': 'IN',
+                'Iowa': 'IA',
+                'Kansas': 'KS',
+                'Kentucky': 'KY',
+                'Louisiana': 'LA',
+                'Maine': 'ME',
+                'Manitoba': 'MB',
+                'Maryland': 'MD',
+                'Massachusetts': 'MA',
+                'Michigan': 'MI',
+                'Minnesota': 'MN',
+                'Mississippi': 'MS',
+                'Missouri': 'MO',
+                'Montana': 'MT',
+                'Nebraska': 'NE',
+                'Nevada': 'NV',
+                'New Brunswick': 'NB',
+                'New Hampshire': 'NH',
+                'New Jersey': 'NJ',
+                'New Mexico': 'NM',
+                'New York': 'NY',
+                'Newfoundland and Labrador': 'NL',
+                'North Carolina': 'NC',
+                'North Dakota': 'ND',
+                'Northwest Territories': 'NT',
+                'Nova Scotia': 'NS',
+                'Nunavut': 'NU',
+                'Ohio': 'OH',
+                'Oklahoma': 'OK',
+                'Ontario': 'ON',
+                'Oregon': 'OR',
+                'Pennsylvania': 'PA',
+                'Prince Edward Island': 'PE',
+                'Puerto Rico': 'PR',
+                'Quebec': 'QC',
+                'Rhode Island': 'RI',
+                'Saskatchewan': 'SK',
+                'South Carolina': 'SC',
+                'South Dakota': 'SD',
+                'Tennessee': 'TN',
+                'Texas': 'TX',
+                'Utah': 'UT',
+                'Vermont': 'VT',
+                'Virginia': 'VA',
+                'Washington': 'WA',
+                'West Virginia': 'WV',
+                'Wisconsin': 'WI',
+                'Wyoming': 'WY',
+                'Yukon': 'YT'
+            };
+            
+            // Return the abbreviation if it exists, otherwise return first 2 letters of state name
+            return stateAbbreviations[stateName] || stateName.substring(0, 2).toUpperCase();
         }
 
         function renderStateCards() {
