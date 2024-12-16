@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <ul class="space-y-2">
                         <li><a href="https://missingmoney.com" class="hover:text-green-400">MissingMoney.com</a></li>
                         <li><a href="/states-resources" class="hover:text-green-400">State Websites</a></li>
-                        <li><a href="/about-us" class="hover:text-green-400">FAQ</a></li>
+                        <li><a href="/about-us#faq" class="hover:text-green-400">FAQ</a></li>
                     </ul>
                 </div>
                 <div>
