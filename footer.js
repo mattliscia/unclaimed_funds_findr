@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div>
                     <h4 class="text-xl font-bold mb-4">Contact</h4>
                     <ul class="space-y-2">
-                        <li>spr3adsh33t.bot@gmail.com.</li>
+                        <li>unclaimedfundsfindr@gmail.com</li>
                         <li><a href="/privacy-policy" class="hover:text-green-400">Privacy Policy</a></li>
                         <li><a href="/terms-of-service" class="hover:text-green-400">Terms of Service</a></li>
                     </ul>
